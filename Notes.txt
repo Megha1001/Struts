@@ -58,3 +58,19 @@ Additionally which things we require :
 - Modularization : (not possible in servlets)
 	100 modular classes are there and we need to share in 3 modules(30+30+40) in servelts we need to share jsp, controller and web.xml, that web.xml will be same if some other developers modify it , then it will override the config of another developer so servlets doesn't have modularization support but it is present in STRUTS.
 In STRUTS we cannot access another module page but in servlets we can access it by simple URL change --> MODULE to MODULE Security
+- FOr designing View pages
+	- Dynamic templates - Tiles support --> dynamic changes on UI
+- Webservices support : Star sports android app calls controller
+
+THOSE ARE BUILD IN METHOD IN STRUTS
+
+
+FEATURES OF STRUTS
+1. form backup support
+2. validation support
+3. Internationalization support - > based on lanuage change browser
+4. Localization support --> bases on language change business
+5. Exception handling
+6. Modularization
+7. MUlti button /multiAction controllers
+8. Tiles support --> for UI design/maintenance

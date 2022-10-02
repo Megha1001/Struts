@@ -45,3 +45,16 @@ MVC-II
 			Suppose we have one fund transfer service from account 1--> 2, while updating amt in 2 bank if it fails we need to rollback the value of amt in acct 1 also, how we can do it in business layer by using TX(Transactional Support) and our java code need to implement from  EJB session beans or else Spring
 	if Using weblogic , websphere --> we need to use EJBs in business class
 	or if using spring webservice -->  we need to use Spring classes in Java logic
+
+
+
+
+STRUTS : Useful for controller and view part
+Additionally which things we require : 
+- Server side validation
+- Internationlization Support : If browser user is Indian use we need to change the language
+- Form backup --> submitting invalid data to server with some valid fields on submitting the form server will return error along with it should keep valid data as is only invalid it needs to delete from form (we dont have that functionality in servelets we can use JSP useBean)
+- Exception handling
+- Modularization : (not possible in servlets)
+	100 modular classes are there and we need to share in 3 modules(30+30+40) in servelts we need to share jsp, controller and web.xml, that web.xml will be same if some other developers modify it , then it will override the config of another developer so servlets doesn't have modularization support but it is present in STRUTS.
+In STRUTS we cannot access another module page but in servlets we can access it by simple URL change --> MODULE to MODULE Security

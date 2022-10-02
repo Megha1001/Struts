@@ -1,0 +1,41 @@
+MVC
+----------
+Architectural design pattern for building any enterprise application, web application or any standalone application.
+
+Application divides into three parts
+- Model
+- View - Presentation code
+	- HTML
+	- HTML-5
+	- JSP
+	- Custum Tags
+	- Adobe Flex
+	for providing validation support
+		- Ext JS
+		- JS
+		- JQuery
+		- AJAX
+		- Boostrap
+	For Styles
+		- CSS
+		- CSS 3
+		
+- Controller --> Read data coming form presentation part and send data to presentation part
+	- Servlets
+	- JSP
+	- Filter
+	- Tag
+
+MVC-II
+-----------------
+- Model --> divide into three parts
+	- Business
+		
+	- DAO --> for database CRUD operation
+		- JDBC
+		ORM Operation -  Provide cache support also and query are not database dependent
+			- EJB-E - QL -- database independent
+			- Hibernate - HQL - object oriented queries --> database independent
+			- JPA
+
+	- Service

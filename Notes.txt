@@ -86,7 +86,7 @@ FEATURES in STRUCT 2.x
 13. Interceptors
 14. Pull MVC --> pull any data from controller part
 
-Struts 
+Struts 1.x
 - 3rd party framework given by Apache framework
 - based on MVC
 - Useful from presentation to controller , not for model
@@ -111,3 +111,51 @@ For Controller below are features
 	- Internalization conrtoller - to change browser language
 	- Helpher classes/ form beans classes - for form beans
 	- Validators - for validation - also a helper class
+
+
+For model we can use(BUSINESS | DAO) : Struts doesn't have any support for model part
+	- EJB-S | ESB-E
+	- EJB-S | HIBERNATE
+	- SPRING | HIBERNATE
+	- SPRING | SPRING ORM
+
+
+Struts 2.x
+- 3rd party framework given by Apache framework
+- based on MVC
+- Useful from presentation to controller , not for model
+For Views below are features
+	- structs form tag support --> provide validation and form backup support, by HTML form tags we can't achieve
+	- internationlization tag support --> based on ur language change browser support
+	- logical tag support --> JSTL tag library
+		- Iterator tags
+		- Conditional tags
+		- Tiles tag
+			We can design UI Templates
+	- AJAX tags support --> THIS IS NEW HERE
+	- OGNL support : for writing dynamic code--> THIS IS NEW HERE
+
+For Controller below are features
+	- Multiaction controllers
+	- Multibutton controllers
+	- Multiform controllers
+	- Exception handers support
+		here no need to write try catch, no need to handle exception. Instead you can ExceptionHandler there you can write your code
+	- Plugin support
+	- Pre-handling support : want to execute some code before controller code. For example security, before submitting application to controller
+		- code executes before controller, for security, for loggig(at what time user logged in)
+	- Post handling support : for example : Output page rendering operation--> THIS IS NEW HERE
+	- Internalization conrtoller - to change browser language
+	- Helpher classes/ form beans classes - for form beans
+	- Validators - for validation - also a helper class
+	- Interceptors --> THIS IS NEW HERE
+	- Values stacks support --> THIS IS NEW HERE
+
+
+For model we can use(BUSINESS | DAO) : Struts doesn't have any support for model part
+	- EJB-S | ESB-E
+	- EJB-S | HIBERNATE
+	- SPRING | HIBERNATE
+	- SPRING | SPRING ORM
+
+Struts 2.x is PULL MVC

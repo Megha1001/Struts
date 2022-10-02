@@ -53,9 +53,9 @@ STRUTS : Useful for controller and view part
 Additionally which things we require : 
 - Server side validation
 - Internationlization Support : If browser user is Indian use we need to change the language
-- Form backup --> submitting invalid data to server with some valid fields on submitting the form server will return error along with it should keep valid data as is only invalid it needs to delete from form (we dont have that functionality in servelets we can use JSP useBean)
+- Form backup --> submitting invalid data to server with some valid fields on submitting the form server will return error along with it should keep valid data as is only invalid it needs to delete from form (we dont have that functionality in servlets we can use JSP useBean)
 - Exception handling
-- Modularization : (not possible in servlets)
+-  
 	100 modular classes are there and we need to share in 3 modules(30+30+40) in servelts we need to share jsp, controller and web.xml, that web.xml will be same if some other developers modify it , then it will override the config of another developer so servlets doesn't have modularization support but it is present in STRUTS.
 In STRUTS we cannot access another module page but in servlets we can access it by simple URL change --> MODULE to MODULE Security
 - FOr designing View pages
@@ -72,7 +72,7 @@ FEATURES OF STRUTS 1.x
 4. Localization support --> bases on language change business
 5. Exception handling
 6. Modularization
-7. MUlti button /multiAction controllers
+7. MUlti button /multiAction controllers - update, add, delete --> functionality in one controller
 8. Tiles support --> for UI design/maintenance
 
 
@@ -86,5 +86,28 @@ FEATURES in STRUCT 2.x
 13. Interceptors
 14. Pull MVC --> pull any data from controller part
 
-Struts --> 3rd party framework given by Apache framework
+Struts 
+- 3rd party framework given by Apache framework
+- based on MVC
+- Useful from presentation to controller , not for model
+For Views below are features
+	- structs form tag support --> provide validation and form backup support, by HTML form tags we can't achieve
+	- internationlization tag support --> based on ur language change browser support
+	- logical tag support --> JSTL tag library
+		- Iterator tags
+		- Conditional tags
+		- Tiles tag
+			We can design UI Templates
 
+For Controller below are features
+	- Multiaction controllers
+	- Multibutton controllers
+	- Multiform controllers
+	- Exception handers support
+		here no need to write try catch, no need to handle exception. Instead you can ExceptionHandler there you can write your code
+	- Plugin support
+	- Pre-handling support : want to execute some code before controller code. For example security, before submitting application to controller
+		- code executes before controller, for security, for loggig(at what time user logged in)
+	- Internalization conrtoller - to change browser language
+	- Helpher classes/ form beans classes - for form beans
+	- Validators - for validation - also a helper class
